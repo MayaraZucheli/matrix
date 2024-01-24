@@ -1,5 +1,84 @@
-$bgColor: rgb(0, 255, 17);
+@use 'hero';
+@use 'variaveis';
+@use 'films';
+
+@font-face {
+    font-family: matrix;
+    src: url(../../assets/fonts/matrix.ttf);
+    font-weight: 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDefundo;
+}
+
+.films__list__item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.films__list__item:hover img {
+    opacity: 0.5; 
+}
+
+footer {
+    background-color: #333;
+    color: variaveis.$corTextoSecundario;
+    text-align: center;
+    padding: 10px;
+    position: inherit;;
+    bottom: 0;
+    width: 100%;
+    font-family: matrix;
+    src: url(../../assets/fonts/matrix.ttf);
+}
+
+@mixin text($fontSize: 12px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 16px;
+}
+
+@mixin title($fontSize: 20px) {
+    @include text($fontSize);
+    font-family: matrix;
+    src: url(../../assets/fonts/matrix.ttf);
+    color: variaveis.$corTextoSecundario;
+    text-align: center;
+}
+
+.text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #333;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out; 
+}
+
+.text.visible {
+    opacity: 1;
+}
+
+.text {
+    @include text;
+}
+
+.title {
+    @include title;
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
 }

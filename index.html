@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Ola</h1>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./dist/imagens/Matrix_logo.png" alt="logo matrix">
+            </h1>
+        </div>
+    </section>
+    <section class="films">
+        <ul class="films__list">
+            <li class="films__list__item" onclick="mostrarTexto('texto1', event)">
+                <h1 class="title">Matrix</h1>
+                <img src="./dist/imagens/matrix1.png" alt="Matrix">
+                <p id="texto1" class="oculto text visible"><i>The Matrix</i> follows Neo, a computer programmer turned hacker, who discovers that the world he knows is a simulated reality created by machines to control humanity. Guided by the rebel Morpheus, Neo embarks on a quest to break free from the Matrix, unveiling his role as 'The One' with the power to defy its constraints. Packed with action and philosophical depth, the film explores the thin line between reality and illusion, becoming a seminal work that reshaped sci-fi cinema and challenged conventional perceptions of existence.</p>
+            </li>
+            <li class="films__list__item" onclick="mostrarTexto('texto2', event)">
+                <h1 class="title">Matrix Reloaded</h1>
+                <img src="./dist/imagens/matrix_reloaded.png" alt="Matrix reloaded">
+                <p id="texto2" class="oculto text visible">
+                    <i>Matrix Reloaded</i> delves deeper into Neo's journey as he grapples with newfound abilities within the Matrix. The narrative expands, unveiling the prophecy surrounding Neo and the impending war against the machines. The film intensifies the stakes, featuring intricate action sequences and unveiling key characters like the Merovingian and the Architect. With a balance of philosophy and high-octane action, "Matrix Reloaded" builds upon the original's foundation, keeping audiences on the edge with its intricate plot twists and mind-bending revelations.</p>
+            </li>
+            <li class="films__list__item" onclick="mostrarTexto('texto3', event)">
+                <h1 class="title">Matrix Revolutions</h1>
+                <img src="./dist/imagens/matrix_revolutions.png" alt="Matrix revolutions">
+                <p id="texto3" class="oculto text visible">
+                    <i>Matrix Revolutions</i> concludes Neo's saga as he confronts the ultimate battle against the machines to save humanity. The film propels the narrative into a grand scale, exploring the war both within the Matrix and in the real world. Neo's alliances are tested, and the story deepens with revelations about the Oracle and the Architect. As the trilogy's climax, "Matrix Revolutions" maintains the series' signature blend of philosophical inquiry and intense action, delivering a satisfying resolution to the overarching conflict while leaving room for contemplation on the nature of choice, sacrifice, and the enduring struggle for freedom.</p>
+            </li>
+            <li class="films__list__item" onclick="mostrarTexto('texto4', event)">
+                <h1 class="title">Matrix Resurrections</h1>
+                <img src="./dist/imagens/matrix_resurrection.png" alt="Matrix resurrection">
+                <p id="texto4" class="oculto text visible">
+                    <i>Matrix Resurrections</i> rekindles the iconic narrative with Neo awakening in a redesigned Matrix, grappling with the blurred boundaries of reality. The film introduces a new iteration of the Matrix, challenging Neo's perceptions and revisiting familiar characters. Exploring themes of nostalgia, choice, and evolution, "Matrix Resurrections" maintains the franchise's signature mix of mind-bending concepts and thrilling action. With a fresh perspective on the established lore, the film seamlessly weaves past and present, offering both a nostalgic nod to the original trilogy and an inventive take on the ever-evolving relationship between humans and machines.</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mayara Zucheli. All Rights Reserved.</p>
+    </footer>
+    <script src="./src/script.js"></script>
 </body>
-</html>
+</html> 
